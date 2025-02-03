@@ -7,4 +7,4 @@ const Shruti = () =>
   )
 }
 
-export default Shruti
+export default Shruti 
