@@ -3,7 +3,10 @@ import React from 'react'
 const Shruti = () =>
 {
   return (
-    <div>i m Shruti</div>
+    <>
+      <div>hiii Shruti</div>
+      <h1>my second chang</h1>
+    </>
   )
 }
 
