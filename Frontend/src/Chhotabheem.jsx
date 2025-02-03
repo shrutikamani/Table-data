@@ -1,17 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const Chhotabheem = () =>
-{
+const Chhotabheem = () => {
   return (
     <>
-    <div>my changes jay</div>
-      <div>my changes jay</div>
-      <div>my changes jay</div>
-      <div>my changes jay</div>
-      <div>jay change </div>
+  <div>alvise bhai ke age koy bol sakta he kya</div>
     </>
+  );
+};
 
-  )
-}
-
-export default Chhotabheem
+export default Chhotabheem;
