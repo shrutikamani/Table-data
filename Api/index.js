@@ -15,6 +15,10 @@ dotenv.config();
 
 app.use("/api" , route);
 
+app.use('/' ,function (req , res) {
+    res.json('hello my name is mongo DB')
+} )
+
 
 const PORT = process.env.PORT ||7000;
 const URL = process.env.MONGOURL;
