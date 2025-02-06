@@ -1,20 +1,17 @@
-import React from 'react'
-import Shruti from './Shruti'
-import Table from './Table'
-import Pogo from './Pogo'
-import Chhotabheem from './Chhotabheem'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Create from "./pages/Create";
 
-const App = () =>
-{
+function App() {
   return (
-    <>
-      <Shruti />
-      <Table></Table>
-      <Pogo></Pogo>
-      <Chhotabheem />
-    </>
-
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/create/:id" element={<Create />} /> {/* Edit mode */}
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
