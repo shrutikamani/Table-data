@@ -12,7 +12,7 @@ const Create = () => {
 
   useEffect(() => {
     if (id) {
-      axios.get(`http://localhost:5000/users/${id}`).then((res) => {
+      axios.get(`http://localhost:8000/api/${id}`).then((res) => {
         setEditing(true);
         setValue("name", res.data.name);
         setValue("phone", res.data.phone);
