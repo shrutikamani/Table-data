@@ -8,7 +8,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/users")
+      .get("http://localhost:3232/api/getAll")
       .then((res) => {
         setUsers(res.data);
         // setLoading(false); // Set loading to false once data is fetched
@@ -38,7 +38,7 @@ const Home = () => {
             <th className="border p-2">Email</th>
             <th className="border p-2">Gender</th>
             <th className="border p-2">Language</th>
-            <th className="border p-2">PROFILE</th>
+            {/* <th className="border p-2">PROFILE</th> */}
             <th className="border p-2">Actions</th>
           </tr>
         </thead>
@@ -49,14 +49,14 @@ const Home = () => {
               <td className="p-2">{user.phone}</td>
               <td className="p-2">{user.email}</td>
               <td className="p-2">{user.gender}</td>
-              <td className="p-2">{user.language}</td>
-              <td className="p-2">
+              <td className="p-2">{user.languages}</td>
+              {/* <td className="p-2">
                 <img
                   src={user.profilePicture}
                   alt="Profile"
                   className="w-12 h-12 rounded-full border"
                 />
-              </td>
+              </td> */}
 
               <td className="p-2">
                 <Link
