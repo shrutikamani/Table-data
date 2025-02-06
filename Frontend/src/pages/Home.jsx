@@ -52,9 +52,12 @@ const Home = () => {
               <td className="p-2">{user.language}</td>
               <td className="p-2">
                 <img
-                  src={user.profilePicture}
+                  src={user.profilePicture} // Directly use Base64 string
                   alt="Profile"
                   className="w-12 h-12 rounded-full border"
+                  onError={(e) =>
+                    (e.target.src = "https://via.placeholder.com/50")
+                  } // Fallback Image
                 />
               </td>
 
